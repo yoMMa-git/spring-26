@@ -1,0 +1,52 @@
+Running data pipeline...
+Detected 4 categorical columns: ['gender', 'oral', 'dental caries', 'tartar']
+Detected 21 numerical columns: ['age', 'height(cm)', 'weight(kg)', 'waist(cm)', 'eyesight(left)', 'eyesight(right)', 'hearing(left)', 'hearing(right)', 'systolic', 'relaxation', 'fasting blood sugar', 'Cholesterol', 'triglyceride', 'HDL', 'LDL', 'hemoglobin', 'Urine protein', 'serum creatinine', 'AST', 'ALT', 'Gtp']
+Data pipeline finished in 0.47 sec
+
+Data shapes:
+  X_train: (33415, 29), y_train: (33415,)
+  X_val: (11138, 29), y_val: (11138,)
+  X_test: (11139, 29), y_test: (11139,)
+
+Training Custom Decision Tree...
+Model trained in 16.719 sec
+Evaluation:
+  Accuracy: 0.5843
+  Precision: 0.8243
+  Recall: 0.4244
+  F1-Score: 0.5603
+  AUC-ROC: 0.8103
+Tree depth: 5, nodes: 51, leaves: 26
+
+Training Sklearn Decision Tree...
+Model trained in 0.090 sec
+Evaluation:
+  Accuracy: 0.6257
+  Precision: 0.8180
+  Recall: 0.4482
+  F1-Score: 0.5791
+  AUC-ROC: 0.8095
+Tree depth: 5, nodes: 49, leaves: 25
+
+============================================================
+COMPARING DECISION TREE IMPLEMENTATIONS
+============================================================
+
+Metrics comparison:
+       Method  Test size  Accuracy  Precision    Recall        F1   ROC AUC
+0   Custom DT      11139  0.584254   0.824279  0.424378  0.560292  0.810291
+1  Sklearn DT      11139  0.625729   0.818026  0.448195  0.579101  0.809452
+
+Top 10 Feature Importances (Custom DT):
+  Feature gender_F (22): 0.8222
+  Feature Gtp (21): 0.0982
+  Feature triglyceride (13): 0.0309
+  Feature age (1): 0.0121
+  Feature waist(cm) (4): 0.0074
+  Feature ALT (20): 0.0072
+  Feature tartar_N (27): 0.0069
+  Feature dental caries_1 (26): 0.0048
+  Feature fasting blood sugar (11): 0.0026
+  Feature height(cm) (2): 0.0022
+
+All done!
