@@ -1,0 +1,2 @@
+ID3 test (до редукции)
+Accuracy: 0.8919, Precision: 0.8914, Recall: 0.8919, F1: 0.8909

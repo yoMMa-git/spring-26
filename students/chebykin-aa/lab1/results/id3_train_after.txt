@@ -1,0 +1,2 @@
+ID3 train (после редукции)
+Accuracy: 0.9404, Precision: 0.9426, Recall: 0.9404, F1: 0.9396

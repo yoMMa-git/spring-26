@@ -1,0 +1,2 @@
+sklearn DecisionTree – Test
+Accuracy: 0.8243, Precision: 0.8237, Recall: 0.8243, F1: 0.8198
